@@ -10,7 +10,12 @@ public class Aksi {
 
         mirza.cetakInformasi();
 
-        Mahasiswa yogy = new Mahasiswa();
+        Mahasiswa yogy = new Mahasiswa("002","Yogy");
         yogy.cetakInformasi();
+
+        mirza.read();
+        mirza.delete("1");
+        mirza.create("001","mirza","mirza@email.com");
+        mirza.create();
     }
 }

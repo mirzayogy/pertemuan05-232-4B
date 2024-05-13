@@ -8,6 +8,49 @@ public class Mahasiswa{
     double ipk;
     int jumlahSks;
 
+    Mahasiswa(){
+        this.npm = "NPM MASIH KOSONG";
+        this.nama = "NAMA MASIH KOSONG";
+        System.out.println("Pembuatan Objek Baru");
+    }
+
+    Mahasiswa(String npm, String nama){
+        this.npm = npm;
+        this.nama = nama;
+        System.out.println("Pembuatan Objek DENGAN PARAM");
+    }
+
+    void read(){
+        String selectSQL = "SELECT * FROM mahasiswa";
+        System.out.println(selectSQL);
+    }
+
+    void deleteAll(){
+        String deleteSQL = "DELETE FROM mahasiswa";
+        System.out.println(deleteSQL);
+    }
+
+    void delete(String npm){
+        String deleteSQL = "DELETE FROM mahasiswa WHERE npm=" + npm;
+        System.out.println(deleteSQL);
+    }
+
+    void create(String npm, String nama, String email){
+        String insertSQL = "INSERT INTO mahasiswa (npm, nama, email) VALUES (" +
+            "'"+npm+"',"+
+            "'"+nama+"',"+
+            "'"+email+"')";
+        System.out.println(insertSQL);
+    }
+
+    void create(){
+        String insertSQL = "INSERT INTO mahasiswa (npm, nama, email) VALUES (" +
+                "'" + this.npm + "'," +
+                "'" + this.nama + "'," +
+                "'" + this.email + "')";
+        System.out.println(insertSQL);
+    }
+
     void cetakInformasi(){
         System.out.println("Nama : " +nama);
         System.out.println("NPM : " +npm);
