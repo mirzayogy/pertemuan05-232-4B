@@ -17,5 +17,16 @@ public class Aksi {
         mirza.delete("1");
         mirza.create("001","mirza","mirza@email.com");
         mirza.create();
+
+        //Class
+        //object
+        //atribut
+        //method/behavior
+        //parameter
+        //constructor
+
+        //1. definisi
+        //2. penulisan
+        //3. pengenalan
     }
 }

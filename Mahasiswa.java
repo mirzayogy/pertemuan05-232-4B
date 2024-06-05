@@ -8,13 +8,13 @@ public class Mahasiswa{
     double ipk;
     int jumlahSks;
 
-    Mahasiswa(){
+    public Mahasiswa(){
         this.npm = "NPM MASIH KOSONG";
         this.nama = "NAMA MASIH KOSONG";
         System.out.println("Pembuatan Objek Baru");
     }
 
-    Mahasiswa(String npm, String nama){
+    public Mahasiswa(String npm, String nama){
         this.npm = npm;
         this.nama = nama;
         System.out.println("Pembuatan Objek DENGAN PARAM");
